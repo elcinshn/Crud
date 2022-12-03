@@ -153,7 +153,7 @@ View'in içinde layout tanımlayarak aşağıdaki kod sırılamasını yazdık.
 ```
 ### 11. Users Listesi
 
-Users listesini oluşturabilmek için index methoduna göndereceğiz.
+Users listesini oluşturabilmek için index methoduna göndereceğiz. Ve aşağıdaki gibi bir komut sıralaması oluşturacaqğız.
 
 ```php
 <?php namespace App\Http\Controllers;
