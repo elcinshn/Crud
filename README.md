@@ -217,7 +217,7 @@ Daha sonra userslistesini görüntülemek için view oluşturacağız.
 ```
 `http://localhost:8000/users` adresine gittiğimizde, veritabanına eklediğimiz verileri göreceğiz.
 
-# 12. Read User
+### 12. Read User
 
 Read işlevi için users içinde show dosyası oluşturduk.
 
@@ -372,7 +372,7 @@ Daha sonra app/controller'ın içinde tekrar update komutunu yazarak komut satı
    }
    ```
 
-### 15. Delete Book
+### 15. Delete User
 
 **CRUD** işlevlerinin sonuncusu *Delete* için, `UserController`'daki `destroy` fonksiyonunu oluşturuyoruz.
 
