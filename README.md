@@ -8,7 +8,7 @@ Programlamada oluşturma, okuma, güncelleme ve silme (Create, Read, Update, Del
 Aşağıdaki komutla Crud isimli laravel projesi oluşturulur.
 
 ```
-composer create-project laravel/laravel Crud --prefer-dist
+composer create-project laravel/laravel Crud prefer-dist
 composer update komutu ile dependencyler yüklenir/güncellenir
 ```
 
@@ -24,15 +24,15 @@ php artisan serve
 
 ## 3.Veritabanı ile Laravel projesi bağlanır.
 Uygulamamızın ana dizinindeki .env dosyasında aşağıdaki alanlarda değişiklikler yapılır.
-
+![database](ss/database.png)
 ```
 APP_NAME=
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=
-DB_USERNAME=
+DB_DATABASE=crud
+DB_USERNAME=root
 DB_PASSWORD=
 
 ```
@@ -40,7 +40,7 @@ DB_PASSWORD=
 ## 4.Komut sistemine giderek oluşturmak istenen tablo adı belirlenerek aşağıda belirtilen şekilde yazılır.
 
 ```
-php artisan make: migration ... –create=...
+php artisan make: migration –create=...
 
 ```
 
