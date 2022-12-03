@@ -1,9 +1,10 @@
-Laravel Crud İşlemleri
+# Laravel Crud İşlemleri
 Laravel, Taylor Otwell tarafından hazırlanan ve MVC mimari desenini takiben web uygulamalarının geliştirilmesi için tasarlanmış, açık kaynak kodlu bir PHP web uygulamasıdır. "PHP framework for Web Artisans" slaganı ile yola çıkar. Laravel öğrenilmesi kolay olmakla birlikte, dokümantasyonuna https://laravel.com/docs/9.x adresinden ulaşılabilir.
-CRUD Nedir?
+
+# CRUD Nedir?
 Programlamada oluşturma, okuma, güncelleme ve silme (Create, Read, Update, Delete), gibi veri depolamada kullanılan dört temel fonksiyondur. Aşağıda örnek bir blog sayfası oluşturarak temel fonksiyonları ele alacağız.
 
-1.	Composer ile Laravel projesi oluşturulur
+### 1.	Composer ile Laravel projesi oluşturulur
 Aşağıdaki komutla blog isimli laravel projesi oluşturulur.
 
 
