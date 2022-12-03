@@ -167,8 +167,8 @@ class UserController extends Controller {
 
    public function index()
    {
-        $userss=User::all();
-        return view('userss.index',compact('users'));
+        $users=User::all();
+        return view('users.index',compact('users'));
     }
 ```
 
@@ -277,7 +277,7 @@ public function show($id)
 ![databes](ss/ekran.png)
 
 ### 13. Create User
-*Creat User* adında yaptığımız gibi Create işlevi için viewin içinde create.blade dosyasını oluşturuyoruz:
+*Create User* adında yaptığımız gibi Create işlevi için viewin içinde create.blade dosyasını oluşturuyoruz:
 
 ```php+HTML
 @extends('layout.template')
@@ -330,7 +330,7 @@ class User extends Model
 
 ### 14. Update User
 
-Update işlemi için resources/views/users/edit.balde dosyası oluşturduk. Ve veritabanında bulunan verilerimizi entegre ettik.
+Update işlemi için resources/views/users/edit.blade dosyası oluşturduk. Ve veritabanında bulunan verilerimizi entegre ettik.
 
 ```php+HTML
 @extends('layout.template')
@@ -360,7 +360,7 @@ Update işlemi için resources/views/users/edit.balde dosyası oluşturduk. Ve v
 @stop
 ```
 
-Daha sonra app/controoler'ın içinde tekrar update komutunu yazarak komut satırını çalıştırdık. 
+Daha sonra app/controller'ın içinde tekrar update komutunu yazarak komut satırını çalıştırdık. 
 
 ```php
  public function update(User $ID)
