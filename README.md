@@ -65,73 +65,29 @@ use App\Http\Controllers\Controller;
 use Request;
 
 class UserController extends Controller {
-   /**
-    * Display a listing of the resource.
-    *
-    * @return Response
-    */
+
    public function index()
    {
-      //
+      // users oluşturulanları çektik.
    }
-   /**
-    * Show the form for creating a new resource.
-    *
-    * @return Response
-    */
    public function create()
    {
-      //
+      // Creat işlemleri yazılacacaktır.
    }
-   /**
-    * Store a newly created resource in storage.
-    *
-    * @return Response
-    */
-   public function store()
-   {
-      //
-   }
-   /**
-    * Display the specified resource.
-    *
-    * @param  int  $id
-    * @return Response
-    */
+   
    public function show($id)
    {
-      //
+      // görüntüleme nmetodu uygulandı.
    }
 
-   /**
-    * Show the form for editing the specified resource.
-    *
-    * @param  int  $id
-    * @return Response
-    */
-   public function edit($id)
-   {
-      //
-   }
-   /**
-    * Update the specified resource in storage.
-    *
-    * @param  int  $id
-    * @return Response
-    */
    public function update($id)
    {
-      //
+      // güncelleme işlemlerinın yapıldığı komut satırı.
    }
-   /**
-    * Remove the specified resource from storage.
-    *
-    * @param  int  $id
-    * @return Response
-    */
+   
    public function destroy($id)
    {
-      //
+      // delete komutu uygulandı.
    }
 }
 ```
@@ -181,9 +137,6 @@ Sonrasında `php artisan route:list` komutu ile, route'ları görüyoruz:
 
 View'in içinde layout tanımlayarak aşağıdaki kod sırılamasını yazdık.
 
-
-`bookstore/resources/views/layout/template.blade.php` dosyasını oluşturup aşağıdaki kodları yazıyoruz.
-
 ```<!doctype html>
 <html lang="en">
 <head>
@@ -212,11 +165,6 @@ use Request;
 
 class UserController extends Controller {
 
-   /**
-    * Display a listing of the resource.
-    *
-    * @return Response
-    */
    public function index()
    {
         $userss=User::all();
@@ -329,7 +277,7 @@ public function show($id)
 ![databes](ss/ekran.png)
 
 ### 13. Create User
-*User book* adımında yaptığımız gibi Create işlevi için viewin içinde create.blade dosyasını oluşturuyoruz:
+*Creat User* adında yaptığımız gibi Create işlevi için viewin içinde create.blade dosyasını oluşturuyoruz:
 
 ```php+HTML
 @extends('layout.template')
@@ -382,7 +330,7 @@ class User extends Model
 
 ### 14. Update User
 
-Update işlemi için resources/views/users/edit.balde dosyası oluşturduk.
+Update işlemi için resources/views/users/edit.balde dosyası oluşturduk. Ve veritabanında bulunan verilerimizi entegre ettik.
 
 ```php+HTML
 @extends('layout.template')
@@ -412,7 +360,7 @@ Update işlemi için resources/views/users/edit.balde dosyası oluşturduk.
 @stop
 ```
 
-Daha sonra app/controoler'ın içinde tekrar update komutunu yazdık.
+Daha sonra app/controoler'ın içinde tekrar update komutunu yazarak komut satırını çalıştırdık. 
 
 ```php
  public function update(User $ID)
@@ -435,4 +383,4 @@ Daha sonra app/controoler'ın içinde tekrar update komutunu yazdık.
      return redirect('users');
    }
    ```
-   Tıkladığımızda veri silinecektir.
+   Tıkladığımızda veri silinecektir. 
