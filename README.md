@@ -7,7 +7,10 @@ Programlamada oluşturma, okuma, güncelleme ve silme (Create, Read, Update, Del
 ### 1.	Composer ile Laravel projesi oluşturulur
 Aşağıdaki komutla blog isimli laravel projesi oluşturulur.
 
-
+```
+composer create-project laravel/laravel blog --prefer-dist
+composer update komutu ile dependencyler yüklenir/güncellenir
+```
 
 
 2.	Proje Klasörüne Gidip Proje Çalıştırılır
