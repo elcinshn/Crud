@@ -273,6 +273,7 @@ Daha sonra userslistesini görüntülemek için view oluşturacağız.
 
 Read işlevi için users içinde show dosyası oluşturduk.
 
+```php+HTML
 @extends('layout/template')
 @section('content')
     <h1>User Details</h1>
